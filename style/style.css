@@ -1,0 +1,167 @@
+#supertitle{
+	color: #ffffff;
+}
+
+#container
+{
+	width: 1000px;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 11px;
+
+}
+
+#header
+{
+	height: 150px;
+	
+	
+	font color: #00b300;
+	background-color: rgb(0,0,51);
+
+}
+#menu
+{
+	height: 60px;
+	
+	background-color: #c2c2a3;
+	
+}
+#sidebar
+{
+	width: 215px;
+	height: 400px;
+	
+	float: right;
+
+}
+#mainbody
+{
+	width: 775px;
+	height: 400px;
+	float: left;
+}
+
+#wid
+{
+	width: 1000px;
+	height: 100px;
+	background-color: rgb(255,255,255);
+}
+
+#nav
+{
+	margin: auto;
+    width: 50%;
+   
+    padding: 10px;
+	
+}
+
+.measure
+{
+	padding: 5px 50px;
+	word-wrap: normal;
+	display:inline-block;
+}
+#footer
+{
+	height: 100px;
+	background-color: #c2c2a3;
+	clear: both;
+}
+
+a 
+{text-decoration: none}
+
+input
+{
+	margin-bottom: 30px;
+}
+
+p { 
+    word-spacing: 100px;
+}
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    text-decoration: underline;
+}
+
+
+.image { 
+   position: relative; 
+   width: 100%; /* for IE 6 */
+}
+
+h2 { 
+   position: absolute; 
+   top: 400px; 
+   left: 400; 
+   width: 100%; 
+}
+h2 span { 
+   color: white; 
+   font: bold 24px/45px Helvetica, Sans-Serif; 
+   letter-spacing: -1px;  
+   background: rgb(0, 0, 0); /* fallback color */
+   background: rgba(0, 0, 0, 0.7);
+   padding: 10px; 
+}
+h2 span.spacer {
+   padding:0 5px;
+}
+
+.floated_img
+{
+    float: left;
+}
+
+ul.products li {
+    width: 270px;
+    display: inline-block;
+}
+
+
+/* Style the list */
+ul.breadcrumb {
+    padding: 10px 16px;
+    list-style: none;
+    background-color: #eee;
+    font-size: 17px;
+}
+
+/* Display list items side by side */
+ul.breadcrumb li {
+    display: inline;
+}
+
+/* Add a slash symbol (/) before/behind each list item */
+ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: black;
+    content: "/\00a0";
+}
+
+/* Add a color to all links inside the list */
+ul.breadcrumb li a {
+    color: #0275d8;
+    text-decoration: none;
+}
+
+/* Add a color on mouse-over */
+ul.breadcrumb li a:hover {
+    color: #01447e;
+    text-decoration: underline;
+}

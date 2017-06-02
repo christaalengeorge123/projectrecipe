@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+
+ <script>
+function validate()
+
+{
+   
+    var h=document.getElementById("pass").value;
+    var i=document.getElementById("renterpassword").value;
+
+  
+if((document.f.radio[0].checked==false)&&(document.f.radio[1].checked==false))
+    {
+        alert("please select  gender");
+            return false; 
+    }
+      else if(h==""||h==null)
+        {
+            
+            alert("please enter a password");
+            
+              document.f.password.focus();
+            return false;
+        }
+        
+        else if(i==""||i==null)
+        {
+            
+            alert("re enter password");
+          document.f.renterpassword.focus();
+            return false;
+        }
+       else if(h!=i)
+            {
+                alert("password mismatch!!");
+                return false;
+            }
+
+        else
+            {
+                return true;
+            }
+        
+        
+}   
+        
+        
+        
+           
+    </script>
+        
+</head>
+<body background="wonderful-design-of-restaurants-home-design-gallery.jpg">
+
+<div id="container"> </div>
+
+<div id="header">
+
+
+<h1 style="color:rgb(0,0,153); font-style: italic; font-size: 70px; ">CopperSpoon Restaurant</h1>
+<div style="float:right"> <h2><a href="index.html" style="color: rgb(255,255,255)">Log Out</a> </h2> </div> <div style="float:right">  </div> - 
+</div>
+<div id="menu" > 
+ </div>
+ 
+ <div id="nav">
+<h2 style="color:rgb(0,0,153); font-style: italic; font-size: 25px; ">New User Registration</h1></p>
+		
+               
+                
+		<form action="registeraction.jsp" method="post" name="f" >
+		  
+        <p></p>
+		
+		<table width="368" height="364" border="0">
+		  <tr>
+		    <td width="154" <font color="#fff"></font> </td>
+		    <td width="204"><label for="fname"></label>
+		      <input type="text" placeholder="Firstname" name="fname" id="fname" required /></td>
+	      </tr>
+		  <tr>
+		    <td></td>
+		    <td><label for="lname"></label>
+		      <input type="text" placeholder="Last name" name="lname" id="lname" required/></td>
+	      </tr>
+		  <tr>
+		    <td height="29"></td>
+		    <td><label for="address"></label>
+		      <input type="text" placeholder="Place" name="address" id="address" required /></td>
+	      </tr>
+		  <tr>
+		    <td></td>
+		    <td><input type="radio" name="radio" id="male" value="male"  />
+		      <label for="gender">Male
+		        <input type="radio" name="radio" id="female" value="female" />
+		        Female</label></td>
+	      </tr>
+		  <tr>
+		    <td></td>
+		    <td><label for="email"></label>
+		      <input type="email" placeholder="Enter email" name="email" id="email" required/></td>
+	      </tr>
+		  <tr>
+		    <td></td>
+		    <td><label for="mobileno"></label>
+                        <input type="text" placeholder="Enter mobileno" name="mobileno" id="mobileno" pattern="[987][0-9]{9}" required/></td>
+	      </tr>
+		  <tr>
+		    <td></td>
+		    <td><label for="username2"></label>
+		      <input type="text" placeholder="Username" name="username" id="username" required/></td>
+	      </tr>
+		  <tr>
+		    <td></td>
+		    <td><label for="password2"></label>
+		      <input type="password" placeholder="Password" name="password" id="pass"/></td>
+	      </tr>
+		  <tr>
+		    <td></td>
+		    <td><label for="renterpassword"></label>
+		      <input type="password" placeholder="Re-Enter" name="renterpassword" id="renterpassword" /></td>
+	      </tr>
+		  <tr>
+		    <td>&nbsp;</td>
+                    <td><input type="submit" value="Add" onclick="return validate()" /></td>
+	      </tr>
+	    </table>
+
+        
+
+<body>
+	
+
+
+</body>
+</html>

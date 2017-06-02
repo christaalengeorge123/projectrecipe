@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	
+	<link rel="stylesheet" type="text/css" href="style/style.css">
+
+<script>
+function validate()
+
+{
+    var anu="anu";
+    var an="an";
+    var u=document.getElementById("username").value;
+    var ho=document.getElementById("password").value;
+    var i=document.getElementById("renterpassword").value;
+    
+       if(h==""||h==null)
+        {
+            
+            alert("please enter a password");
+            
+              document.f.password.focus();
+            return false;
+        }
+        
+        else if(i==""||i==null)
+        {
+            
+            alert("re enter password");
+          document.f.renterpassword.focus();
+            return false;
+        }
+       else if(h!=i)
+            {
+                alert("password mismatch!!");
+                return false;
+            }
+        else if(anu==u && an==ho)
+            {
+                
+             return true;
+
+            }
+        else
+            {
+                
+
+                alert("invalid user!!");
+                return false;
+            }
+        
+        
+}   
+        
+        
+        
+           
+    </script>
+</head>
+<body>
+
+
+<div id="container" </div>
+<ul class="breadcrumb">
+  <li><a href="index.html">Home</a></li>
+  
+  <li>Login</li>
+</ul>
+
+<div id="header">
+<p></p>
+<p></p>
+<p></p>
+<h1 style="color:rgb(255,255,255); font-style: bold;">CopperSpoon Restaurant</h1>
+
+<div style="float:right"> <a href="index.html" style="color: rgb(255,255,255);font-size: 20px;">Logout &nbsp; &nbsp;</a> </div> 
+<div style="float:right"> <a href="trial.html" style="color: rgb(255,255,255);font-size: 20px;">Services  &nbsp; &nbsp;</a> </div>
+<div style="float:right"> <a href="register.html" style="color: rgb(255,255,255);font-size: 20px;">About  &nbsp; &nbsp;</a> </div>
+<div style="float:right"> <a href="regform.html" style="color: rgb(255,255,255);font-size: 20px;">Register  &nbsp; &nbsp;</a> </div>
+ <div style="float:right"> <a href="register.html" style="color: rgb(255,255,255);font-size: 20px;">Home&nbsp; &nbsp;</a> </div>
+</div>
+
+
+
+ <center>
+ <div id="mainbody">
+
+ 
+<p></p>
+<p></p>
+<form action="recipe.html" name="login" onSubmit="return(valid());">
+  <ul style="list-style-type: none;">
+  
+          <li>
+      Username :    <input type="text" id="uname" name="umail" required> </br>
+      </li>
+      <li>
+          Password  :    <input type="password" name="password" id="pass" required" >
+      </li>
+      
+      <li>
+                <input type="submit" value="Login" />
+                 
+      </li>
+
+  </ul>
+  </form>
+  </div></center>
+</div>
+
+   <!--validating password-->
+    <script>
+    function valid(){
+             var un = "anu";
+             var passw =    "an";
+             var ma =    document.getElementById("uname").value;
+             var pass =    document.getElementById("pass").value;
+             
+    if (un == ma  && passw == pass) {
+
+        return true;
+        
+                }
+                else{
+
+                    alert("invalid user");
+        return false;
+
+                }
+
+
+            }
+    </script>
+
+
+ 
+ <div id="footer">
+<center>
+ <a href="" style="color: rgb(0,0,0);">Feed back</a>
+ <span class="measure"/>
+ <a href="" style="color: rgb(0,0,0);">Contact us</a>
+ <span class="measure"/>
+ <a href="" style="color: rgb(0,0,0);">Services</a>
+ <span class="measure"/>
+ <a href="" style="color: rgb(0,0,0);">About</a>
+</center>
+</div>
+
+</body>
+</html>
+ 
+ 
